@@ -2,7 +2,7 @@
 
 URL-shortener application via Spring Boot & Redis.
 
-### Installation
+## Installation
 
 #### 1. Build JAR
 Package the application:
