@@ -2,19 +2,19 @@
 
 URL-shortener application via Spring Boot & Redis.
 
-## Build JAR
+### Installation
 
-- Package the application
-
+#### 1. Build JAR
+Package the application:
 `$ ./mvnw clean package`
 
 > To skip the tests use: `-DskipTests=true` 
 
-## Run
+#### 2. Run docker
 
 `$ docker-compose build && docker-compose up -d`
 
-## Verify the application is running
+#### 3. Verify the application is running
 
 > Application listens on port 8080.
 
