@@ -20,13 +20,13 @@ Package the application:
 
 Check swagger-ui
 ```
-GET http://localhost:8080/swagger-ui/index.html
+http://localhost:8080/swagger-ui/index.html
 ```
 
 Or use curl:
 ```
 Create short-URL:
-GET http://localhost:8080/urlshortener?url=http://google.com
+GET http://localhost:8080/urlshortener?url=http://www.google.com
 
 Get full URL by short-link:
 GET http://localhost:8080/urlshortener/4170157c
