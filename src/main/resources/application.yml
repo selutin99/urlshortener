@@ -6,7 +6,6 @@ spring:
   jackson:
     serialization:
       fail-on-empty-beans: false
-      FAIL_ON_EMPTY_BEANS: false
     deserialization:
       unwrap-root-value: false
 
@@ -23,7 +22,6 @@ spring:
   cache:
     type: redis
     redis:
-      time-to-live: 30
       cache-null-values: false
 
 server:
