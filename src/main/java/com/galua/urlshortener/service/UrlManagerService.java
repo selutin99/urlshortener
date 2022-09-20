@@ -11,15 +11,12 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
 import java.nio.charset.Charset;
-import java.util.concurrent.TimeUnit;
 
 @Slf4j
 @Service
 @RequiredArgsConstructor
 @CacheConfig(cacheNames = "urlCache")
 public class UrlManagerService {
-
-    private static final Long REDIS_SET_TIMEOUT = 36000L;
 
     private final RedisTemplate<String, Url> redisTemplate;
     private final EnvUtil envUtil;
