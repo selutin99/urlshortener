@@ -45,7 +45,7 @@ public class UrlManagerService {
                 .originalUrl(url)
                 .shortenUrl(envUtil.getShortenUrl(key))
                 .build();
-        redisTemplate.opsForValue().set(key, shortUrlEntry, REDIS_SET_TIMEOUT, TimeUnit.SECONDS);
+        redisTemplate.opsForValue().set(key, shortUrlEntry);
         log.info("Successfully add url {} to Redis", url);
         return shortUrlEntry;
     }
